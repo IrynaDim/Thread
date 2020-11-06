@@ -1,27 +1,28 @@
 public class Counter {
-    private static Counter instance;
-    private static int count;
+    private static Counter counter;
+    private int count;
 
     private Counter() {
-    }
-
-    public void increase(int count) {
-        Counter.count = count + 1;
-    }
-
-    public static int getCount() {
-        return count;
-    }
-
-    public static void setCount(int count) {
-        Counter.count = count;
+        count = 0;
     }
 
     public static Counter getInstance() {
-        if (instance == null) {
-            instance = new Counter();
-            count = 0;
+        if (counter == null) {
+            counter = new Counter();
         }
-        return instance;
+        return counter;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public void increase() {
+        this.count = count + 1;
     }
 }
+
