@@ -1,16 +1,13 @@
 public class Counter {
-    private static Counter counter;
-    private int count;
+    private int count = 0;
+    private int maxCount = 100;
 
-    private Counter() {
-        count = 0;
+    public int getMaxCount() {
+        return maxCount;
     }
 
-    public static Counter getInstance() {
-        if (counter == null) {
-            counter = new Counter();
-        }
-        return counter;
+    public void setMaxCount(int maxCount) {
+        this.maxCount = maxCount;
     }
 
     public int getCount() {

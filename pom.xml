@@ -16,9 +16,6 @@
         <maven.checkstyle.plugin.configLocation>
             https://raw.githubusercontent.com/mate-academy/style-guides/master/java/checkstyle.xml
         </maven.checkstyle.plugin.configLocation>
-        <jacoco.version>0.8.5</jacoco.version>
-        <spring.version>5.2.6.RELEASE</spring.version>
-        <spring.security.version>5.3.3.RELEASE</spring.security.version>
     </properties>
     <dependencies>
         <dependency>
